@@ -8,6 +8,7 @@ public class Sample{
 		
 		// Find out all the even numbers exist in the list using Stream functions?
 		System.out.println();
+		// Even numbers	
 		list.stream().filter(l -> l%2 == 0).forEach(System.out::println);
 		
 		// Find out all the numbers starting with 1 using Stream functions?
