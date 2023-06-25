@@ -6,7 +6,7 @@ public class Sample{
 		// create a list
 		List<Integer> list = Arrays.asList(11,22,33,44,44,55,1,2,3,3,4,5);
 		
-			
+		// Even numbers	
 		list.stream().filter(l -> l%2 == 0).forEach(System.out::println);
 		
 		// find out all the numbers starting with 1 using Stream functions?
