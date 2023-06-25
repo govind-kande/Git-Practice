@@ -6,7 +6,7 @@ public class Sample{
 		// create a list
 		List<Integer> list = Arrays.asList(11,22,33,44,44,55,1,2,3,3,4,5);
 		
-		// Even numbers	using stream function
+		// Find  all the even numbers exist in the list using Stream functions?
 		System.out.println("Even numbers");
 		list.stream().filter(l -> l%2 == 0).forEach(System.out::println);
 		
