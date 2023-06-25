@@ -34,5 +34,6 @@ public class Sample{
 
 		// Find the first non-repeated character in it using Stream functions?
 		List<String> strList = Arrays.asList("find the first non-repeated character in it using Stream functions ? ");
+
 	}
 }
