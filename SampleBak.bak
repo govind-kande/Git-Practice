@@ -1,12 +1,16 @@
 import java.util.*;
 import java.util.stream.*;
-import java.util.function.*;
+
 public class Sample{
 	public static void main(String... args){
 		// create a list
 		List<Integer> list = Arrays.asList(11,22,33,44,44,55,1,2,3,3,4,5);
 		
+<<<<<<< HEAD
 		// Find  all the even numbers exist in the list using Stream functions?
+=======
+		// Even numbers	using stream function
+>>>>>>> 63de86c82ce46c8198801950bb8d962afe1e7e61
 		System.out.println("Even numbers");
 		list.stream().filter(l -> l%2 == 0).forEach(System.out::println);
 		
@@ -33,22 +37,7 @@ public class Sample{
 		System.out.println(list.stream().max((i,j) -> i.compareTo(j)).get());
 
 		// Find the first non-repeated character in it using Stream functions?
-		System.out.println("First non repeated character");
-		String input = "Find the first non-repeated character in it using Stream functions?";
-		Character result = input.chars() // Stream of String
-			.mapToObj(s -> Character.toLowerCase(Character.valueOf((char) s))) // First convert to Character object and then to lowercase
-			.collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()))//convert char to map using count  
-			.entrySet().stream().filter(entry -> entry.getValue() == 1L).map(entry -> entry.getKey()).findFirst().get();
-		System.out.println(result);
+		List<String> strList = Arrays.asList("find the first non-repeated character in it using Stream functions ? ");
 
-		// sort all the values present in it using Stream functions?
-		System.out.println("Sorted list");
-		System.out.println(list.stream().sorted().collect(Collectors.toList()));
-
-		// sort all the values present in it using Stream functions?
-		System.out.println("Sorted list");
-		list.stream().sorted(Collections.reverseOrder()).forEach(System.out::println);
-
-		
 	}
 }
